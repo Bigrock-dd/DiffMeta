@@ -1,0 +1,4 @@
+name: 'chembl'
+datadir: '/root/autodl-tmp/DiffMeta/dataset/chembl'                 # Relative to the moses_dataset.py file
+remove_h: null
+filter: False

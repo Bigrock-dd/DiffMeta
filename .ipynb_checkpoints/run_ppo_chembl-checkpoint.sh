@@ -1,0 +1,6 @@
+#!/bin/bash //修改位置
+
+train_method="gdpo"
+val_method="ppo"
+
+python main_generate.py -m dataset="chembl" +experiment=chembl_ppo_7W4A.yaml general.train_method=$train_method general.val_method=$val_method  general.seed=$RANDOM

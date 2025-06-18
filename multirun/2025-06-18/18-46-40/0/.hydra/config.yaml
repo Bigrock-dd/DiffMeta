@@ -1,0 +1,86 @@
+general:
+  name: chembl
+  wandb: disabled
+  gpus: 1
+  device: 0
+  seed: 15212
+  resume: null
+  test_only: null
+  check_val_every_n_epochs: 1
+  sample_every_val: 1
+  test_method: orig
+  val_method: ppo
+  train_method: gdpo
+  ppo_sr: 0.2
+  back_step: 50
+  chain_L: 5
+  innerloop: 2
+  sampleloop: 1
+  vallike: false
+  minibatchnorm: false
+  step_freq: 1
+  discrete: true
+  partial: true
+  fix: 0.0
+  thres: 0.8
+  target_prop: 7W4A
+  val_check_interval: 2
+  samples_to_generate: 40
+  samples_to_save: 9
+  chains_to_save: 1
+  log_every_steps: 50
+  number_chain_steps: 30
+  final_model_samples_to_generate: 40
+  final_model_samples_to_save: 30
+  final_model_chains_to_save: 20
+  evaluate_all_checkpoints: false
+  remove_h: true
+  weight_list:
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.3
+  - 0.6
+  - 0.05
+  - 0.05
+model:
+  type: discrete
+  transition: marginal
+  model: graph_tf
+  diffusion_steps: 500
+  diffusion_noise_schedule: cosine
+  n_layers: 12
+  extra_features: all
+  hidden_mlp_dims:
+    X: 256
+    E: 128
+    'y': 256
+  hidden_dims:
+    dx: 256
+    de: 64
+    dy: 128
+    n_head: 8
+    dim_ffX: 256
+    dim_ffE: 128
+    dim_ffy: 256
+  lambda_train:
+  - 5
+  - 0
+train:
+  n_epochs: 100
+  batch_size: 128
+  lr: 1.0e-05
+  clip_grad: null
+  save_model: true
+  num_workers: 0
+  ema_decay: 0
+  progress_bar: true
+  weight_decay: 1.0e-12
+  amsgrad: true
+  optimizer: adamw
+  seed: 0
+dataset:
+  name: moses
+  datadir: data/moses/moses_pyg/
+  remove_h: null
+  filter: false
