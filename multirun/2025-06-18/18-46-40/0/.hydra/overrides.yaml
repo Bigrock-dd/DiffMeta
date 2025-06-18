@@ -1,5 +1,0 @@
-- dataset=moses
-- +experiment=moses_ppo_7W4A.yaml
-- general.train_method=gdpo
-- general.val_method=ppo
-- general.seed=15212
