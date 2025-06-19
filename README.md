@@ -91,7 +91,17 @@ bash run_ppo_chembl.sh
 > Make sure to update both the **experiment YAMLs** and the **docking parameters in `vinadock.py`** accordingly.
 
 
+### MetaCYP
 
+The MetaCYP module is used to predict CYP450-related metabolic properties of generated molecules. It contributes reward signals during RL fine-tuning.
+
+•	Location:
+>scorer/MetaCYP/
+
+•	Pretrained CYP-specific models: 
+>scorer/saved_models/
+  
+This folder contains classifiers for major CYP isoforms (e.g., CYP2C19, CYP3A4, CYP2D6).
 
 ## License
 Code is released under MIT LICENSE.
