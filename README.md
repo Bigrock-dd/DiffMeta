@@ -52,12 +52,12 @@ Before training, ensure that datasets (e.g., MOSES, ChEMBL, GuacaMol) are downlo
 
 - **[GuacaMol](https://github.com/BenevolentAI/guacamol)**: A benchmark suite for goal-directed molecular generation. Download the datasets and place them under `dataset/guacamol/`.
 
-- **[ChEMBL v35](https://drive.google.com/drive/folders/15k0v46YiSRE-Cs7aTBgwbB_uh4UTXEbN?usp=drive_link)**: Our customized dataset based on ChEMBL. Download the provided files and place them under `dataset/chembl/`.
+- **[ChEMBL v35](https://drive.google.com/file/d/1QcML0t86ccCzvDB4srDpvpmXy09cy9VW/view?usp=drive_link)**: Our customized dataset based on ChEMBL. Download the provided files and place them under `dataset/chembl/`.
 
 
 
 
-
+https://drive.google.com/file/d/1QcML0t86ccCzvDB4srDpvpmXy09cy9VW/view?usp=drive_link
 
 
 ## Running
