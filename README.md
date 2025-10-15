@@ -57,9 +57,6 @@ Before training, ensure that datasets (e.g., MOSES, ChEMBL, GuacaMol) are downlo
 
 
 
-https://drive.google.com/file/d/1QcML0t86ccCzvDB4srDpvpmXy09cy9VW/view?usp=drive_link
-
-
 ## Running
 
 The training process in **DiffMeta-RL** consists of two sequential stages:
